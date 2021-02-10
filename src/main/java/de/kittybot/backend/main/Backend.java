@@ -1,6 +1,8 @@
 package de.kittybot.backend.main;
 
-import de.kittybot.backend.exceptions.MissingConfigValuesException;
+import de.kittybot.backend.objects.exceptions.MissingConfigValuesException;
+import de.kittybot.backend.objects.module.Module;
+import de.kittybot.backend.objects.module.Modules;
 import de.kittybot.backend.utils.Config;
 import de.kittybot.backend.utils.ThreadFactoryHelper;
 import okhttp3.OkHttpClient;
@@ -11,13 +13,11 @@ import java.util.concurrent.ScheduledThreadPoolExecutor;
 
 public class Backend{
 
-	private final ScheduledExecutorService scheduler;
-	private final OkHttpClient httpClient;
+	private final Modules modules;
 
 	public Backend() throws IOException, MissingConfigValuesException{
 		Config.init("./config.json");
-		this.scheduler = new ScheduledThreadPoolExecutor(2, new ThreadFactoryHelper());
-		this.httpClient = new OkHttpClient();
+		this.modules = new Modules(this);
 	}
 
 }

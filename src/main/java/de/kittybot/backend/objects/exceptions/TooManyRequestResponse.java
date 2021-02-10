@@ -1,4 +1,4 @@
-package de.kittybot.backend.exceptions;
+package de.kittybot.backend.objects.exceptions;
 
 import io.javalin.http.HttpResponseException;
 import org.eclipse.jetty.http.HttpStatus;

@@ -1,4 +1,4 @@
-package de.kittybot.backend.exceptions;
+package de.kittybot.backend.objects.exceptions;
 
 import java.util.Set;
 

@@ -1,6 +1,6 @@
 package de.kittybot.backend.main;
 
-import de.kittybot.backend.exceptions.MissingConfigValuesException;
+import de.kittybot.backend.objects.exceptions.MissingConfigValuesException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
