@@ -32,7 +32,7 @@ dependencies {
 
     // docker
     implementation 'com.amihaiemil.web:docker-java-api:0.0.13'
-    implementation 'org.glassfish:javax.json:1.0.4'
+    implementation 'org.glassfish:javax.json:1.1.4'
 
     // database
     implementation 'com.zaxxer:HikariCP:3.4.5'
