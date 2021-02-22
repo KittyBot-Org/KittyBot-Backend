@@ -42,7 +42,7 @@ dependencies {
 
     // logging
     implementation 'ch.qos.logback:logback-classic:1.3.0-alpha5'
-    implementation 'io.sentry:sentry-logback:3.2.0'
+    implementation 'io.sentry:sentry-logback:4.2.0'
 
     // jjwt
     implementation 'io.jsonwebtoken:jjwt-api:0.11.2'
