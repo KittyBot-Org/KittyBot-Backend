@@ -35,7 +35,7 @@ dependencies {
     implementation 'org.glassfish:javax.json:1.0.4'
 
     // database
-    implementation 'com.zaxxer:HikariCP:3.4.5'
+    implementation 'com.zaxxer:HikariCP:4.0.3'
     implementation 'org.jooq:jooq:3.14.4'
     implementation 'org.postgresql:postgresql:42.2.18'
     jooqGenerator 'org.postgresql:postgresql:42.2.18'
